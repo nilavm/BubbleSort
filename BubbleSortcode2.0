@@ -1,0 +1,12 @@
+temp = input("Please enter your numbers with spaces.")
+print(temp)
+my_list = temp.split()
+print (my_list)
+length = len(my_list)
+
+for f in range(length):
+  for c in range(length-1):
+    if my_list[c] > my_list[c+1]:
+      my_list[c], my_list[c+1] = my_list[c+1], my_list[c]
+print("Your list has been sorted!")
+print(my_list)
